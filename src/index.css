@@ -483,6 +483,7 @@ textarea
 {
   transition:transform 0.8s;
   z-index: 100;
+  margin-bottom: 2.5rem;
 }
 #zook:hover
 {

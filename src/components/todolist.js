@@ -226,12 +226,12 @@ const Todo = () => {
               {
                   document.getElementById("cap").innerHTML = 'Add Your List...✌';
                   // console.log(scrollId);
-                  document.getElementById(scrollId).scrollIntoView({block: "center"});
                   
                   dispatch(addItems(inputdata,"Edit"));
                   document.getElementById('IdOfInput').value='';
                   document.getElementById('Id_content').value='';
                   setInputData({title:'',content:''});
+                  document.getElementById(scrollId).scrollIntoView({block: "center"});
               }
             }></i>
             ) : (

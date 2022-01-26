@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Google_Keep_Clone-React_Redux/static/css/main.4c3f8730.css",
-    "main.js": "/Google_Keep_Clone-React_Redux/static/js/main.16d1dfcc.js",
+    "main.js": "/Google_Keep_Clone-React_Redux/static/js/main.5bca0244.js",
     "static/media/todo.png": "/Google_Keep_Clone-React_Redux/static/media/todo.04d9cfea0ec478e515d9.png",
     "static/media/todolight.png": "/Google_Keep_Clone-React_Redux/static/media/todolight.f270d905bbeaa4c5dab7.png",
     "static/media/up_arrow.png": "/Google_Keep_Clone-React_Redux/static/media/up_arrow.f73059766261b8d2b1b8.png",
     "static/media/down_arrow.png": "/Google_Keep_Clone-React_Redux/static/media/down_arrow.597892b6834f1252d7b2.png",
     "index.html": "/Google_Keep_Clone-React_Redux/index.html",
     "main.4c3f8730.css.map": "/Google_Keep_Clone-React_Redux/static/css/main.4c3f8730.css.map",
-    "main.16d1dfcc.js.map": "/Google_Keep_Clone-React_Redux/static/js/main.16d1dfcc.js.map"
+    "main.5bca0244.js.map": "/Google_Keep_Clone-React_Redux/static/js/main.5bca0244.js.map"
   },
   "entrypoints": [
     "static/css/main.4c3f8730.css",
-    "static/js/main.16d1dfcc.js"
+    "static/js/main.5bca0244.js"
   ]
 }

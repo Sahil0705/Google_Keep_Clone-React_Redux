@@ -174,6 +174,11 @@ const Todo = () => {
     });
   }
 
+  function notify_update()
+  {
+    alert("Note updated..");
+    document.getElementById(scrollId).scrollIntoView({block: "center"});
+  }
   return (
     <>
     <div className="heading" id="head">
@@ -231,7 +236,8 @@ const Todo = () => {
                   document.getElementById('IdOfInput').value='';
                   document.getElementById('Id_content').value='';
                   setInputData({title:'',content:''});
-                  document.getElementById(scrollId).scrollIntoView({block: "center"});
+                  // document.getElementById(scrollId).scrollIntoView({block: "center"});
+                  notify_update();
               }
             }></i>
             ) : (

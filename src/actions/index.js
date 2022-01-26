@@ -1,6 +1,5 @@
 export const addItems = (data,name) =>
 {
-    // console.log(data);
     return({
         type:"Add_item",
         payload:{

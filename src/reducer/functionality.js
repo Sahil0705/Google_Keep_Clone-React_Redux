@@ -3,10 +3,7 @@ let v = JSON.parse(localStorage.getItem("notes_redux"));
 // console.log(v);
 if(v==null)
     v = [
-    {
-        title:'',
-        content:''
-    }
+
 ]
 
 const initalList = {

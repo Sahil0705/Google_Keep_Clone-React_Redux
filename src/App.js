@@ -8,7 +8,7 @@ function App() {
     <>
       <ToDo />
       <div className='footer'>
-      <p id='foot'>&copy; Copyright {year}, &nbsp;&nbsp;&nbsp; Made by - Sahil Sachin Donde😀</p>
+      <p id='foot'>&copy; {year}, &nbsp;&nbsp;&nbsp; Made by - Sahil Sachin Donde &nbsp;😀</p>
       </div>
     </>
   );

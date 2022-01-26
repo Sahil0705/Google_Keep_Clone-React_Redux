@@ -34,7 +34,7 @@ const Todo = () => {
     {
       document.body.style.backgroundColor='#FFFFFF';
       document.getElementById('IdOfInput').style.backgroundColor='#ff793b';
-      document.getElementById('IdOfInput').focus();
+      // document.getElementById('IdOfInput').focus();
       document.getElementById('cap').style.color='black';
       document.getElementById('faw').classList.replace("fa-sun","fa-moon");
       document.getElementById('faw').title='Dark Theme..?';
@@ -53,22 +53,14 @@ const Todo = () => {
         this.style.backgroundColor='#e19d00';
         this.style.color='white';
       }
-      document.getElementById('download').style.color='black';
-      document.getElementById('download').onmouseout = function()
-      {
-        this.style.color='black';
-      }
-      document.getElementById('download').onmouseenter = function()
-      {
-        this.style.color='white';
-      }
+      
       document.getElementById('child_div').style.filter = 'drop-shadow(10px 10px 20px #cccccc)';
     }
     else if(theme=='dark')
     {
       document.body.style.backgroundColor='#060822';
       document.getElementById('IdOfInput').style.backgroundColor='rgb(85, 41, 220)';
-      document.getElementById('IdOfInput').focus();
+      // document.getElementById('IdOfInput').focus();
       document.getElementById('cap').style.color='white';
       document.getElementById('faw').classList.replace("fa-moon","fa-sun");
       document.getElementById('faw').title='Light Theme..?'
@@ -86,15 +78,7 @@ const Todo = () => {
         this.style.backgroundColor='rgb(85, 41, 220)';
         this.style.color='white';
       }
-      document.getElementById('download').style.color='white';
-      document.getElementById('download').onmouseout = function()
-      {
-        this.style.color='white';
-      }
-      document.getElementById('download').onmouseenter = function()
-      {
-        this.style.color='white';
-      }
+      
       document.getElementById('child_div').style.filter = 'none';
       document.getElementById('head').style.backgroundColor='rgb(85, 41, 220)';
     }
@@ -107,7 +91,7 @@ const Todo = () => {
     {
         document.body.style.backgroundColor='#FFFFFF';
         document.getElementById('IdOfInput').style.backgroundColor='#ff793b';
-        document.getElementById('IdOfInput').focus();
+        // document.getElementById('IdOfInput').focus();
         document.getElementById('cap').style.color='black';
         document.getElementById('faw').classList.replace("fa-sun","fa-moon");
         document.getElementById('faw').title='Dark Theme..?';
@@ -126,15 +110,7 @@ const Todo = () => {
           this.style.backgroundColor='#e19d00';
           this.style.color='white';
         }
-        document.getElementById('download').style.color='black';
-        document.getElementById('download').onmouseout = function()
-        {
-          this.style.color='black';
-        }
-        document.getElementById('download').onmouseenter = function()
-        {
-          this.style.color='white';
-        }
+        
         document.getElementById('child_div').style.filter = 'drop-shadow(10px 10px 20px #cccccc)';
         setTheme('light');
     }
@@ -142,7 +118,7 @@ const Todo = () => {
     {
         document.body.style.backgroundColor='#060822';
         document.getElementById('IdOfInput').style.backgroundColor='rgb(85, 41, 220)';
-        document.getElementById('IdOfInput').focus();
+        // document.getElementById('IdOfInput').focus();
         document.getElementById('cap').style.color='white';
         document.getElementById('faw').classList.replace("fa-moon","fa-sun");
         document.getElementById('faw').title='Light Theme..?'
@@ -160,15 +136,7 @@ const Todo = () => {
           this.style.backgroundColor='rgb(85, 41, 220)';
           this.style.color='white';
         }
-        document.getElementById('download').style.color='white';
-        document.getElementById('download').onmouseout = function()
-        {
-          this.style.color='white';
-        }
-        document.getElementById('download').onmouseenter = function()
-        {
-          this.style.color='white';
-        }
+        
         document.getElementById('child_div').style.filter = 'none';
         document.getElementById('head').style.backgroundColor='rgb(85, 41, 220)';
         setTheme('dark');
@@ -192,22 +160,18 @@ const Todo = () => {
     localStorage.setItem("googlekeepclone_redux_theme", theme);
   }, [theme]);
 
-  const print_to_pdf = () =>
-  {
-    var restore = document.body.innerHTML;
-    var printContent = document.getElementById('showNotes').innerHTML;
-    document.body.innerHTML = printContent;
-    window.print();
-    document.body.innerHTML = restore;
-  }
 
   function copy_to_clipboard(title, content) {
 
     var copyText = `Title : ${title}, Content : ${content}`;
-
-    navigator.clipboard.writeText(copyText);
     
-    alert("Note copied to Clipboard...");
+    navigator.clipboard.writeText(copyText)
+    .then(() => {
+      alert("Note copied to Clipboard...");
+    })
+    .catch(err => {
+      console.log('Something went wrong', err);
+    });
   }
 
   return (
@@ -303,14 +267,7 @@ const Todo = () => {
               ></textarea>
           </div>
         </div>
-        <div className="btn-div">
-        <button className="learn-more" id="add"  onClick={print_to_pdf}>
-            <span className="circle" aria-hidden="true">
-                <span className="icon arrow"></span>
-            </span>
-            <span className="button-text" id='download'>Download</span>
-        </button>
-    </div>
+        <br/><br/>
           <div className="showItems" id='showNotes'>
             {list.map((curElem,index) => {
               

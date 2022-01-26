@@ -7,7 +7,7 @@ function App() {
   return(
     <>
       <ToDo />
-      <div class='footer'>
+      <div className='footer'>
       <p id='foot'>&copy; Copyright {year}, &nbsp;&nbsp;&nbsp; Made by - Sahil Sachin Donde😀</p>
       </div>
     </>

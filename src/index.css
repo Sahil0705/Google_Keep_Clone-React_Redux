@@ -276,7 +276,7 @@ input:focus {
   font-family:'Convergence';
   font-size: 17px;
   border-color: black;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 .btn_remove:hover
 {
@@ -402,6 +402,14 @@ input:focus {
     width: 10rem;
     height: 10rem;
   }
+  .heading
+  {
+    font-size: 13px;
+  }
+  #foot
+  {
+    font-size: 2vh;
+  }
 }
 @media screen and (min-width: 401px) {
 
@@ -409,6 +417,14 @@ input:focus {
     margin-top: 50px;
     width: 10.5rem;
     height: 10.5rem;
+  }
+  .heading
+  {
+    font-size: 16px;
+  }
+  #foot
+  {
+    font-size: 2.7vh;
   }
 }
 
@@ -459,7 +475,6 @@ textarea
   line-height: 5.8rem;
   margin-left: 2rem;
   font-weight: bold;
-  font-size: 28px;
 }
 
 .btn-div {
@@ -568,20 +583,22 @@ button:hover .button-text {
   transform:scale(1.1);
 }
 .footer {
+  position: fixed;
   margin-top:4vh;
   left: 0;
-  bottom: 0;
+  bottom: 0vh;
   width: 100%;
   height:6.8vh;
   background-color: black;
   color: white;
   text-align: center;
+  z-index: 90;
 }
 #foot
 {
   padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
-  font-size: 2.7vh;
+  /* padding-bottom: 1.5vh; */
+  /* font-size: 2.7vh; */
   font-family: 'Convergence';
-  font-weight: bold;
+  font-weight: bold
 }

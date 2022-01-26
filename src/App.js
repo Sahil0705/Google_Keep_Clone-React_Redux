@@ -9,8 +9,8 @@ function App() {
     <>
       <BrowserRouter>
        <Switch>
-         <Route exact path="/" component={ToDo} />
-         <Redirect to="/" />
+         <Route exact path="/Google_Keep_Clone-React_Redux" component={ToDo} />
+         <Redirect to="/Google_Keep_Clone-React_Redux" />
        </Switch>
       </BrowserRouter>
       <div className='footer'>

@@ -236,7 +236,7 @@ const Todo = () => {
                   document.getElementById('Id_content').value='';
                   setInputData({title:'',content:''});
                   document.getElementById(scrollId).scrollIntoView({block: "center"});
-                  notify_update();
+                  // notify_update();
               }
             }></i>
             ) : (

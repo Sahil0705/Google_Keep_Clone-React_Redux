@@ -2,6 +2,7 @@ import React from 'react';
 import ToDo from './components/todolist'
 
 const year = new Date().getFullYear();
+// console.log(year);
 
 function App() {
   return(

@@ -226,7 +226,7 @@ const Todo = () => {
               {
                   document.getElementById("cap").innerHTML = 'Add Your List...✌';
                   // console.log(scrollId);
-                  
+                  document.getElementById('IdOfInput').blur();
                   dispatch(addItems(inputdata,"Edit"));
                   document.getElementById('IdOfInput').value='';
                   document.getElementById('Id_content').value='';

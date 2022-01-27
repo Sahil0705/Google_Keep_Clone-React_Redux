@@ -14,7 +14,7 @@ const Todo = () => {
   });
   let t = localStorage.getItem("googlekeepclone_redux_theme");
   if(t==null)
-    t = "dark"
+    t = "light"
   // console.log(t);
   let [theme, setTheme] = useState(t);
   const dispatch  = useDispatch();

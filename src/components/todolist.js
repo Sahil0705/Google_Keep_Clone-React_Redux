@@ -294,7 +294,7 @@ const Todo = () => {
                           // console.log(scrollId);
                           document.getElementById("cap").innerHTML = 'Update Your List...✌';
                           document.getElementById("IdOfInput").scrollIntoView({block: "center"});
-                          document.getElementById("IdOfInput").focus();
+                          // document.getElementById("IdOfInput").focus();
                           dispatch(updateItems(curElem.id,curElem));
                           document.getElementById('IdOfInput').value=curElem.title;
                           document.getElementById('Id_content').value=curElem.content;

@@ -24,6 +24,7 @@ const Todo = () => {
   let [c, setc] = useState(0);
   
   window.onload = function(){
+    document.getElementById("IdOfInput").focus();
     keepTheme();
   }
   // console.log("S"+list.length+" "+toggle);
